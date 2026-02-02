@@ -30,4 +30,8 @@ public class Booking {
     @ManyToOne
     @JoinColumn(name="room_id")
     private Room room;
+
+    @OneToOne
+    @JoinColumn(name="payment_id")
+    private Payment payment;
 }
