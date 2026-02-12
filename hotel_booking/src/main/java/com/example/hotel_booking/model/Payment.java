@@ -16,8 +16,8 @@ import java.time.LocalDateTime;
 public class Payment {
     @Id
     @GeneratedValue
-    private Long paymentId;
-    private Double totalPrice;
+    private Long payment_Id;
+    private double totalPrice;
     private String paymentMethod;
     private LocalDateTime paymentDate;
     private String transactionId;
