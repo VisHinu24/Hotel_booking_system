@@ -1,5 +1,6 @@
 package com.example.hotel_booking.service;
 
+
 import com.example.hotel_booking.handler.BadRequestException;
 import com.example.hotel_booking.handler.ResourceNotFoundException;
 import com.example.hotel_booking.model.Booking;
@@ -110,4 +111,6 @@ public class BookingService {
             throw new BadRequestException("Check-in date cannot be in the past");
         }
     }
+
+
 }

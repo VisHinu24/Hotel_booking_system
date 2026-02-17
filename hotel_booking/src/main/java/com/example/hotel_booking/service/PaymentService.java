@@ -58,7 +58,7 @@ public class PaymentService {
 
         Payment existing = getPayment(id);
 
-        if (updatedPayment.getTotalPrice() != null) {
+        if (updatedPayment.getTotalPrice() >0) {
             existing.setTotalPrice(updatedPayment.getTotalPrice());
         }
 

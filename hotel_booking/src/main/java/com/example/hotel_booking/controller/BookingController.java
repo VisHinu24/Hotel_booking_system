@@ -1,5 +1,6 @@
 package com.example.hotel_booking.controller;
 
+
 import com.example.hotel_booking.model.Booking;
 import com.example.hotel_booking.service.BookingService;
 import org.springframework.http.ResponseEntity;
@@ -57,4 +58,10 @@ public class BookingController {
         bookingService.deleteBooking(id);
         return ResponseEntity.noContent().build();
     }
+
+
+
+
+
+
 }

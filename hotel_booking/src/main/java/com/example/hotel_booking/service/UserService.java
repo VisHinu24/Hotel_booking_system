@@ -36,7 +36,7 @@ public class UserService {
 
         User existing = getUser(id);
 
-        existing.setName(updatedUser.getName());
+        existing.setUsername(updatedUser.getUsername());
         existing.setEmail(updatedUser.getEmail());
         existing.setPassword(updatedUser.getPassword());
         existing.setPhone_no(updatedUser.getPhone_no());
@@ -49,8 +49,8 @@ public class UserService {
 
         User existing = getUser(id);
 
-        if (updatedUser.getName() != null) {
-            existing.setName(updatedUser.getName());
+        if (updatedUser.getUsername() != null) {
+            existing.setUsername(updatedUser.getUsername());
         }
 
         if (updatedUser.getEmail() != null) {
